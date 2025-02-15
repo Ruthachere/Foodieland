@@ -1,0 +1,104 @@
+.recipeContainer {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  justify-content: center;
+  padding: 100px 60px;
+}
+.recipeHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+}
+.recipeHeader h2 {
+  font-size: 48px;
+  font-weight: 600;
+  text-align: center;
+}
+.recipeHeader p {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+}
+.cardTitle {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.cardTitle h3 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+}
+.card {
+  position: relative;
+  background: linear-gradient(
+    20deg,
+    rgba(231, 249, 253, 1),
+    rgba(231, 249, 253, 0)
+  );
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 20px;
+  padding: 20px 10px 28px 10px;
+  height: 500px;
+}
+.recipeCard {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px 18px;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+.imageUrl {
+  object-fit: cover;
+  width: 100%;
+  height: 300px;
+  border-radius: 20px;
+}
+.adContainer {
+  background-color: rgba(29, 72, 59, 1);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 10px;
+  height: 500px;
+  align-items: center;
+}
+.adContainer h3 {
+  color: white;
+  text-align: center;
+  font-size: 24px;
+}
+.adContainer span {
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  font-size: 16px;
+}
+.heartIcon {
+  width: 48px;
+  height: 48px;
+  background-color: white;
+  border-radius: 100%;
+  border: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-end;
+  position: absolute;
+  top: 8%;
+  margin-right: 12px;
+}
+
+.heart {
+  color: rgba(255, 99, 99, 1);
+}

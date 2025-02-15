@@ -1,0 +1,25 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  color: black;
+  padding: 24px 60px;
+  border-bottom: 1px solid rgb(143, 142, 142);
+  margin: auto;
+  box-sizing: border-box;
+}
+.ul {
+  display: flex;
+  gap: 30px;
+}
+.ul li {
+  list-style: none;
+  /* padding: 14px; */
+  font-weight: 500;
+  font-size: 17px;
+}
+.navigation_icons {
+  display: flex;
+  gap: 0px 34px;
+}

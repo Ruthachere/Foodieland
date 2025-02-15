@@ -1,0 +1,179 @@
+.HeroSection{
+    background-color: white;
+    color: black;
+
+}
+.heroContent{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 50% 50%;
+    padding: 100px 60px;
+    
+
+}
+.heroBody{
+    padding: 20px 40px;
+   display: flex;
+   flex-direction: column;
+   gap: 60px;
+   justify-content: center;
+   background-color:rgba(231, 250, 254, 1) ;
+   border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+   
+   
+}
+.foodplate{
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+
+}
+.titleContent{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+.titleContent h1{
+    font-size: 64px;
+}
+.titleContent p{
+    font-size:16px ;
+    color:rgba(0, 0, 0, 0.6) ;
+    line-height: 24px;
+}
+.profileContent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.profile{
+    display: flex;
+    gap: 10px;
+}
+.profile div{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.recipeBtn{
+    width: 200px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    padding: 18px;
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 16px;
+}
+.hotrecipeBtn{
+    width: 200px;
+    height: 60px;
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    padding: 12px;
+    border: none;
+    border-radius: 30px;
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+
+}
+
+.categorySection{
+    background-color: white;
+    color: black;
+    padding: 60px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+.categoryHeader{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+.cardContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 40px;
+    justify-content: center;
+}
+.category h2{
+    font-size: 48px;
+    font-weight: 400;
+}
+.viewBtn{
+    width: 100%;
+    background-color:rgba(231, 250, 254, 1) ;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 20px;
+    border: none;
+    border-radius: 16px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-self: center;
+    padding: 20px 0px;
+    gap: 40px;
+    border-radius: 10px;
+    background-color: rgba(112, 130, 70, 0.1);
+
+}
+.card h2{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* feature section */
+.featureContainer{
+    background-color: white;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+    padding: 60px;
+}
+.featureTitle{
+    display: flex;
+    padding: 50px 10px;
+    justify-content: center;
+    align-self: center;
+    flex-direction: column;
+    gap: 48px;
+    height: 100%;
+}
+.featureTitle div{
+display: flex;
+flex-direction: column;
+gap: 24px;
+}
+.featureTitle h2{
+    font-size: 48px;
+    font-weight: 600;
+}
+.featureTitle p{
+    font-size: 18px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.6);
+    line-height: 28px;
+}
+.learnMoreBtn{
+    width: 30%;
+    background-color:black ;
+    color: white;
+    font-size: 16px;
+    padding: 18px;
+    border: none;
+    border-radius: 16px;
+}
+

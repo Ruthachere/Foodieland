@@ -1,0 +1,71 @@
+.inboxContainer {
+  background-color: white;
+  padding: 60px;
+}
+.inboxContents {
+  background-color: rgba(231, 249, 253, 1);
+  padding: 60px 0px 0px 0px;
+  display: flex;
+  height: 350px;
+  border-radius: 60px;
+  justify-content: space-between;
+  align-self: center;
+}
+
+.image {
+  align-self: end;
+}
+.inboxContent {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  text-align: center;
+  padding: 30px;
+  width: 800px;
+  align-self: flex-start;
+}
+.inboxContent h3 {
+  font-size: 48px;
+  font-weight: 600;
+}
+.inboxContent p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  color: rgba(0, 0, 0, 0.6);
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.inboxForm {
+  border: 2px solid white;
+  width: 60%;
+  height: 70px;
+  border-radius: 16px;
+  display: flex;
+  padding: 24px 14px;
+  justify-content: space-between;
+  align-self: center;
+  align-items: center;
+  background-color: white;
+}
+.inboxInput {
+  padding: 12px;
+  background-color: transparent;
+  border: 0;
+  outline: none;
+  width: 90%;
+}
+.inboxInput:focus {
+  color: black;
+}
+.subscribe_btn {
+  width: 50%;
+  padding: 18px 20px;
+  background-color: black;
+  font-size: 16px;
+  border-radius: 20px;
+  border: 0;
+}
