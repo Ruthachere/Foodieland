@@ -1,0 +1,70 @@
+.inputContent, .dropdownContent, .messageContent{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.inputField, .selectInput{
+    width: 400px;
+    border-radius: 16px;
+    border: 1px solid rgba(19, 18, 18, 0.1) ;
+    height: 60px;
+    padding: 20px;
+    background-color: transparent;
+}
+
+.inputField::placeholder, .message::placeholder{
+    color:rgba(0, 0, 0, 0.6) ;
+    font-size: 14px;
+    line-height: 24px;
+}
+.inputField:focus{
+    color: black;
+    
+}
+.label{
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 20px;
+    color:rgba(0, 0, 0, 0.6) ;
+    text-transform: uppercase;
+}
+.selectInput{
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 14px;
+}
+.message{
+    background-color: transparent;
+    color:rgba(0, 0, 0, 0.6) ;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    width: 840px;
+    height: 200px;
+    border-radius: 16px;
+    padding: 20px;
+    border: 1px solid rgba(19, 18, 18, 0.1);
+    resize: none;
+}
+.inputElements{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px ;
+}
+.submitButton{
+    width: 180px;
+    height: 64px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 16px;
+    border: none;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.error{
+    color: red;
+}

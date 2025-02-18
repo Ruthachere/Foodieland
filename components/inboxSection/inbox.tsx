@@ -64,14 +64,4 @@ const Inbox = () => {
 };
 
 export default Inbox;
-// let list = [];
-// <Comp
-// value  = 'a'
-//  liked={list.filter((e)=>'a').length>0}
-//  onClick={()=>{
-//     if(list has item){
-//         remove
-//     }
-//     else add item to list
-//  }}
-// />
+

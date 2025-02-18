@@ -16,7 +16,7 @@ const Navigation = () => {
         <div className={styles.navbarElements}>
           <ul className={styles.ul}>
             <li>
-              <Link rel="stylesheet" href="">
+              <Link rel="stylesheet" href="/">
                 Home
               </Link>
             </li>
@@ -34,13 +34,13 @@ const Navigation = () => {
             </li>
 
             <li>
-              <Link rel="stylesheet" href="">
+              <Link rel="stylesheet" href="/ContactUs">
                 Contact
               </Link>
             </li>
 
             <li>
-              <Link rel="stylesheet" href="/app/about">
+              <Link rel="stylesheet" href="">
                 About us
               </Link>
             </li>

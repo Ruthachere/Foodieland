@@ -24,7 +24,7 @@ import ChickenMeatballs from "@/public/images/Chicken meat balls.png";
 import Fruitypancake from "@/public/images/Fruity pancake.png";
 import Chicken from "@/public/images/Chicken and rice.png";
 import Pasta from "@/public/images/Pasta.png";
-import Footer from "@/components/footerSection/Footer";
+
 
 let data = [
   {
@@ -98,8 +98,8 @@ let recipeData = [
 
 export default function Home() {
   return (
-    <body>
-      <Navigation />
+    <>
+      {/* <Navigation /> */}
       <HeroSection />
       <Categories />
       <Recipe data={data} />
@@ -107,7 +107,7 @@ export default function Home() {
 
       <Recipes recipeData={recipeData} />
       <Inbox />
-      <Footer />
-    </body>
+      {/* <Footer /> */}
+    </>
   );
 }
