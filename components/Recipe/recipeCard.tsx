@@ -4,6 +4,7 @@ import Image from "next/image";
 import Button from "../Button/button";
 import styles from "../Recipe/recipe.module.css";
 import { FaHeart } from "react-icons/fa";
+import { useCounter } from "@/context/themeContext";
 
 interface Props {
   imageUrl: string;
@@ -12,21 +13,20 @@ interface Props {
 
 const RecipeCard: React.FC<Props> = ({ imageUrl, title }) => {
   const [liked, setLiked] = useState(false);
+  const {counter, increment, decrement} = useCounter();
 
   function handleClick() {
-    // setLiked((Like) => !Like); // Toggle the like state
-
-    setLiked((like) => {
-      //Checks the conditions
-      if (like) {
-        return false;
-      } else {
-        return true;
-      }
-    });
+    if(liked){
+      decrement();
+    }else{
+      increment();
+    }
+     setLiked((Like) => !Like); // Toggle the like state
+    
   }
   return (
     <div>
+      <h1>Count:{counter}</h1>
       <div className={styles.card}>
         <Image
           src={imageUrl}
@@ -55,3 +55,4 @@ const RecipeCard: React.FC<Props> = ({ imageUrl, title }) => {
 };
 
 export default RecipeCard;
+

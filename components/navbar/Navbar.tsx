@@ -1,16 +1,21 @@
+'use client'
 import React from "react";
 import Link from "next/link";
 import Logo from "./logo";
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 import styles from "./styles.module.css";
+import { useCounter } from "@/context/themeContext";
+
 const Navigation = () => {
   const style = { fontSize: "24px" };
+  const {counter, increment, decrement} = useCounter();
 
   return (
     <>
       <div className={styles.navbar}>
         <div>
           <Logo />
+          <h3> Counter: {counter}</h3>
         </div>
 
         <div className={styles.navbarElements}>
