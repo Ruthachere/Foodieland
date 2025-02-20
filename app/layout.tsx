@@ -4,6 +4,7 @@ import "./globals.css";
 import Navigation from "@/components/navbar/Navbar";
 import Footer from "@/components/footerSection/Footer";
 import { ThemeProvider } from "@/context/themeContext";
+import { Providers } from "./GlobalRedux/provider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,11 +29,15 @@ export default function Layout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <ThemeProvider>
-        <Navigation/>
-        <main>{children}</main>
-        <Footer/>
-        </ThemeProvider>
+        {/* <ThemeProvider> */}
+        <Providers >
+          <Navigation />
+
+          <main>{children}</main>
+
+          <Footer />
+        </Providers>
+        {/* </ThemeProvider> */}
       </body>
     </html>
   );

@@ -5,17 +5,24 @@ import Logo from "./logo";
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 import styles from "./styles.module.css";
 import { useCounter } from "@/context/themeContext";
+import { useDispatch, useSelector } from "react-redux";
+import { RootState } from "@/app/GlobalRedux/store";
+
+
 
 const Navigation = () => {
   const style = { fontSize: "24px" };
-  const {counter, increment, decrement} = useCounter();
+  const count = useSelector((state:RootState) => state.counter.value);
+  const dispatch = useDispatch();
+  // const {counter, increment, decrement} = useCounter();
 
   return (
     <>
       <div className={styles.navbar}>
         <div>
           <Logo />
-          <h3> Counter: {counter}</h3>
+          <h1>Count:{count}</h1>
+          {/* <h3> Counter: {counter}</h3> */}
         </div>
 
         <div className={styles.navbarElements}>
